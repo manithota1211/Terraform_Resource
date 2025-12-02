@@ -1,0 +1,1 @@
+internet_gateway = "mani_igw"
