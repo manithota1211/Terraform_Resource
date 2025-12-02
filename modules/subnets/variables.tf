@@ -15,6 +15,7 @@ variable "public_availability_zone" {
 
 
 
+
 # variables for private subnet
 
 variable "private_subnet_name" {
@@ -27,5 +28,10 @@ variable "private_subnet_cidr_block" {
 }
 variable "private_availability_zone" {
     description = "the availability zone for private subnet"
+    type = string
+}
+
+variable "vpc_id" {
+    description = "this is vpc id"
     type = string
 }
