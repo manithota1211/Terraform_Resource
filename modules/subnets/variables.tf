@@ -4,7 +4,7 @@ variable "public_subnet_name" {
     description = "the name for the public subnet"
     type = string
 }
-variable "public_cidr_block" {
+variable "public_subnet_cidr_block" {
     description = "the cidr block for public subnet"
     type = string
 }
@@ -13,13 +13,15 @@ variable "public_availability_zone" {
     type = string
 }
 
+
+
 # variables for private subnet
 
 variable "private_subnet_name" {
     description = "the subnet name for private subnet"
     type = string
 }
-variable "private_cidr_block" {
+variable "private_subnet_cidr_block" {
     description = "the cidr block for private subnet"
     type = string
 }

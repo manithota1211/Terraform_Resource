@@ -15,7 +15,7 @@ resource "aws_instance" "web_server" {
 }
 
 
-resource "aws_instance" "web_server" {
+resource "aws_instance" "private_server" {
     ami = var.private_instance_ami_id
     count = var.private_instance_count
     instance_type = var.private_instance_type
