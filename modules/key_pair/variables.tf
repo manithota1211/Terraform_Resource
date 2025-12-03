@@ -3,7 +3,3 @@ variable "key_pair_name" {
     type = string
 }
 
-variable "public_key" {
-    description = "the public key for ec2 instances"
-    type = string
-}

@@ -1,1 +1,1 @@
-internet_gateway = "mani_igw"
+internet_gateway_id = "mani_igw"

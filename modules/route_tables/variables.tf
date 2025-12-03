@@ -9,6 +9,9 @@ variable "public_rt_cidr" {
     type = string
 }
 
+
+
+
 # private route table values
 
 variable "private_rt" {
@@ -17,5 +20,36 @@ variable "private_rt" {
 }
 variable "private_rt_cidr" {
     description = "the cidr for privte rt"
+    type = string
+}
+
+variable "vpc_id" {
+    description = "the vpc id for rt"
+    type = string
+}
+
+variable "nat_gateway" {
+    description = "the tag name for nat gateway"
+    type = string
+}
+
+
+# igw_id
+
+variable "internet_gateway_id" {
+    description = "the igw id foe rt"
+    type = string
+}
+
+# subnet association
+
+variable "public_subnet_id" {
+    description = "the subnet id for route association"
+    type = string
+}
+
+
+variable "private_subnet_id" {
+    description = "the subnet id for route association"
     type = string
 }

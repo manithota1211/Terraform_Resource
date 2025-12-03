@@ -28,8 +28,12 @@ variable "key_pair_name" {
     description = "the key name for ec2 instances"
     type = string
 }
+variable "public_subnet_id" {
+    description = "the subnet id for ec2 instance"
+    type = string
+}
 
-
+# private variables
 
 variable "private_instance_name" {
     description = "the name tag for ec2 instance"
@@ -54,3 +58,12 @@ variable "private_instance_count" {
     type = number
 }
 
+variable "security_group_id" {
+    description = "the count of ec2 instances"
+    type = string
+}
+
+variable "private_subnet_id" {
+    description = "the subnet id for ec2 instance"
+    type = string
+}

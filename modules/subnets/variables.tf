@@ -1,6 +1,6 @@
 # variables for public subnet
 
-variable "public_subnet_name" {
+variable "public_subnet_id" {
     description = "the name for the public subnet"
     type = string
 }
@@ -18,7 +18,7 @@ variable "public_availability_zone" {
 
 # variables for private subnet
 
-variable "private_subnet_name" {
+variable "private_subnet_id" {
     description = "the subnet name for private subnet"
     type = string
 }

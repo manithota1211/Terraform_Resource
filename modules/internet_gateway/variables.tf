@@ -1,4 +1,4 @@
-variable "internet_gateway" {
+variable "internet_gateway_id" {
     description = "the igw for internet access"
     type = string
 }

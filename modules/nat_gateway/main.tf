@@ -1,19 +1,17 @@
-
-resource "aws_nat_gateway" "main_nat" {
-    allocation_id = aws_eip.nat_ip.id
-    subnet_id = aws_subnet.public_subnet.id
-    tags = {
-        Name = var.ngw
-    }
-
-}
-
-# creating eip and nat gateway
+# eip resource
 
 resource "aws_eip" "nat_ip" {
-    tags = {
-        Name = var.eip_name
-
-    
+        domain = "vpc"
+        tags = {
+            Name = var.eip_name
+        }
     }
+
+resource "aws_nat_gateway" "main_nat" {
+    subnet_id = var.public_subnet_id
+    allocation_id = aws_eip.nat_ip.id
+    tags = {
+        Name = var.nat_gateway
+    }
+
 }

@@ -3,7 +3,7 @@ resource "aws_subnet" "public_subnet" {
     cidr_block = var.public_subnet_cidr_block
     availability_zone = var.public_availability_zone
     tags = {
-        Name = var.public_subnet_name
+        Name = var.public_subnet_id
     }
 }
 
@@ -12,6 +12,6 @@ resource "aws_subnet" "private_subnet" {
     cidr_block = var.private_subnet_cidr_block
     availability_zone = var.private_availability_zone
     tags = {
-        Name = var.private_subnet_name
+        Name = var.private_subnet_id
     }
 }
