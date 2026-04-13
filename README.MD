@@ -50,6 +50,9 @@ terraform init
 terraform plan -var-file="dev.tfvars"
 ✔ Apply Infrastructure
 terraform apply -var-file="dev.tfvars"
+
+
+
 🎯 What This Shows
 Terraform module-based architecture
 AWS infrastructure provisioning
