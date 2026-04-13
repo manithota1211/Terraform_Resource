@@ -1,4 +1,4 @@
-variable "nat_gateway" {
+variable "nat_gateway_name" {
     description = "the tag name for nat gateway"
     type = string
 }
@@ -10,7 +10,7 @@ variable "eip_name" {
     type = string
 }
 
-variable "public_subnet_id" {
+variable "public_subnet_ids" {
     description = "the subnet id sor nat gw"
-    type = string
+    type = list(string)
 }

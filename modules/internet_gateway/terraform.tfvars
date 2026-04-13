@@ -1,1 +1,0 @@
-internet_gateway_id = "mani_igw"

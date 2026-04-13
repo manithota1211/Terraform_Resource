@@ -1,1 +1,0 @@
-security_group_name = "main_sg"
